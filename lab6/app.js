@@ -20,7 +20,15 @@ app.get("/", (req, res) => {
 app.get("/city", (req, res) => {
     //let country = "VietNam";
     let cities = ["Hanoi", "HCM", "Da nang", "Can tho"];
-    res.render("city", { country: "Vietnam", cities: cities});
+    let provides = ["FPT", "Viettel", "VNPT"];
+    res.render("city", { country: "Vietnam", cities: cities, provides: provides});
+});
+
+app.get("/login", (req, res) => {
+    res.render("login");
+});
+app.get("/logout", (req, res) => {
+    res.render("logout");
 });
 
 //chay web server 
