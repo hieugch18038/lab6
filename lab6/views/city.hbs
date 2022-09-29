@@ -1,7 +1,12 @@
 <h5>Some cities in {{country}}: </h5>
 {{! foreach loop }}
-<ol>
+<table border="1">
+  <tr>
+    <th>City</th>
+  </tr>
   {{#each cities}}
-    <ul>{{this}}</ul>
+    <tr>
+      <td>{{this}}</td>
+    </tr>
   {{/each}}
-</ol>
+</table>
