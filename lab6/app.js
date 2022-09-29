@@ -5,7 +5,7 @@ const path = require("path");
 const port = process.env.PORT || 8000;
 
 //set thu muc chua views
-app.set("view", path.join(__dirname, "/views"));
+app.set("views", path.join(__dirname, "/views"));
 //set view engine (template engine)
 app.set("view engine", "hbs");
 
